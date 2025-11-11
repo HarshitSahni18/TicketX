@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/static/css/main.6a7ffe3b.css",
+    "main.js": "/static/js/main.5b6f926c.js",
+    "static/media/Others.png": "/static/media/Others.ebbbf3b49c2cb2587dfa.png",
+    "static/media/Operational Costs & Logistics.png": "/static/media/Operational Costs & Logistics.5eb18a9044cd53fc0f55.png",
+    "static/media/IMG_4774.png": "/static/media/IMG_4774.5443f97aacae0864d993.png",
+    "static/media/Revenue.png": "/static/media/Revenue.58ba29c3e15bc38d028d.png",
+    "static/media/1BSC8075.png": "/static/media/1BSC8075.afcd5457b7df84b9ff0e.png",
+    "static/media/Resources.png": "/static/media/Resources.3ff307f6b502f482c4c9.png",
+    "static/media/New Product Launch.png": "/static/media/New Product Launch.b31bc1e24be17749c691.png",
+    "static/media/Financial Management.png": "/static/media/Financial Management.685496a1799ab1b2c0f1.png",
+    "static/media/Business Strategy.png": "/static/media/Business Strategy.b5ea4b39ec85681e211f.png",
+    "static/media/Get Help.png": "/static/media/Get Help.2c338765733aec331395.png",
+    "static/media/Technical Support.png": "/static/media/Technical Support.5aba041a4c76d8da199f.png",
+    "static/media/logo.png": "/static/media/logo.70cd877da2969da1e1d2.png",
+    "static/media/hero.png": "/static/media/hero.5b756d0f0dcc200a90a0.png",
+    "index.html": "/index.html",
+    "main.6a7ffe3b.css.map": "/static/css/main.6a7ffe3b.css.map",
+    "main.5b6f926c.js.map": "/static/js/main.5b6f926c.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.6a7ffe3b.css",
+    "static/js/main.5b6f926c.js"
+  ]
+}
