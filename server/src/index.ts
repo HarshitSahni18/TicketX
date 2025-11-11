@@ -2,6 +2,9 @@ import express from "express";
 import mongoose from "mongoose";
 import dotenv from "dotenv";
 import cors from "cors";
+import path from "path";
+
+// Import your routes and middlewares
 import AuthRouter from "./routes/auth";
 import otpRouter from "./routes/otp";
 import { authenticateJWT } from "./middlewares/authJWT";
@@ -12,6 +15,8 @@ import queryRouter from "./routes/query";
 dotenv.config();
 
 const app = express();
+
+// Middleware
 app.use(express.json());
 app.use(
   cors({
@@ -19,19 +24,30 @@ app.use(
   })
 );
 
+// API Routes
 app.use("/auth", AuthRouter);
 app.use("/otp", authenticateJWT, validateStats, otpRouter);
 app.use("/ticket", authenticateJWT, validateStats, ticketRouter);
 app.use("/query", queryRouter);
 
+// Health Check
 app.get("/health-check", (req, res) => {
   res.status(200).json({ message: "Yeah, I'm Alive!!" });
 });
 
+// Serve React Frontend
+const clientBuildPath = path.join(__dirname, "../client/build");
+app.use(express.static(clientBuildPath));
+
+app.get("*", (req, res) => {
+  res.sendFile(path.join(clientBuildPath, "index.html"));
+});
+
+// MongoDB Connection
 const mongodb_uri = process.env.MONGODB_URI;
 
 if (!mongodb_uri) {
-  console.error("MONGODB_URI environment variable is not defined.");
+  console.error("❌ MONGODB_URI environment variable is not defined.");
   process.exit(1);
 } else {
   // Force TLS 1.2+ to avoid SSL errors
@@ -39,8 +55,7 @@ if (!mongodb_uri) {
 
   mongoose
     .connect(mongodb_uri, {
-      dbName: "ticketPortal", // your DB name
-      
+      dbName: "ticketPortal",
     })
     .then(() => {
       console.log("✅ MongoDB connected successfully");
