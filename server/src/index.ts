@@ -30,8 +30,9 @@ const mongodb_uri = process.env.MONGODB_URI;
 
 if (!mongodb_uri) {
   console.error("MONGODB_URI environment variable is not defined.");
+ 
 } else {
-  mongoose.connect(process.env.MONGO_URI!, { dbName: "ticketPortal" });
+  mongoose.connect(process.env.MONGODB_URI!, { dbName: "ticketPortal" });
 
   const db = mongoose.connection;
 
