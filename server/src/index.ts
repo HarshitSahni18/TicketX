@@ -8,6 +8,7 @@ import { authenticateJWT } from "./middlewares/authJWT";
 import { validateStats } from "./middlewares/authStats";
 import ticketRouter from "./routes/ticket";
 import queryRouter from "./routes/query";
+
 dotenv.config();
 
 const app = express();
@@ -17,6 +18,7 @@ app.use(
     origin: process.env.FRONTEND_BASE_URL || "http://localhost:3000",
   })
 );
+
 app.use("/auth", AuthRouter);
 app.use("/otp", authenticateJWT, validateStats, otpRouter);
 app.use("/ticket", authenticateJWT, validateStats, ticketRouter);
@@ -30,23 +32,26 @@ const mongodb_uri = process.env.MONGODB_URI;
 
 if (!mongodb_uri) {
   console.error("MONGODB_URI environment variable is not defined.");
- 
+  process.exit(1);
 } else {
-  mongoose.connect(process.env.MONGODB_URI!, { dbName: "ticketPortal" });
+  // Force TLS 1.2+ to avoid SSL errors
+  (require("https") as any).globalAgent.options.minVersion = "TLSv1.2";
 
-  const db = mongoose.connection;
+  mongoose
+    .connect(mongodb_uri, {
+      dbName: "ticketPortal", // your DB name
+      
+    })
+    .then(() => {
+      console.log("✅ MongoDB connected successfully");
 
-  db.once("open", () => {
-    console.log("MongoDB connected");
-
-    const PORT: number = parseInt(process.env.PORT || "3000", 10);
-
-    app.listen(PORT, () => {
-      console.log("Server listening on port:", PORT);
+      const PORT: number = parseInt(process.env.PORT || "3000", 10);
+      app.listen(PORT, () => {
+        console.log(`🚀 Server listening on port: ${PORT}`);
+      });
+    })
+    .catch((error) => {
+      console.error("❌ MongoDB connection error:", error);
+      process.exit(1); // Exit if DB connection fails
     });
-  });
-
-  db.on("error", (error) => {
-    console.error("MongoDB connection error:", error);
-  });
 }
