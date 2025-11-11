@@ -1,0 +1,161 @@
+/* ======= NavBar Styles ======= */
+
+.Navbar{
+   
+height: 70px;
+flex-shrink: 0;
+border-radius: 48px;
+border: 1px solid rgba(0, 0, 0, 0.08);
+background: rgba(0, 0, 0, 0.02);
+margin: 20px 20px;
+display: flex;
+justify-content: space-between;
+margin-bottom: 0px;
+}
+.bar{
+    background: #D81F84;
+    width: 60.007px;
+height: 2px;
+position: relative;
+left: 18px;
+}
+
+.navigation{
+    display: flex;
+    padding: 23px;
+   
+}
+.profile-design{
+    position: relative;
+    bottom: 6px;
+    cursor: pointer;
+}
+.links{
+    color: #35363A;
+font-family: 'Inter', sans-serif;
+font-size: 20px;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+padding:0px 20px ;
+cursor: pointer;
+}
+
+.logo{
+    width: 60px;
+    height: 60px;
+    flex-shrink: 0;
+    margin: 5px 5px;
+}
+
+.company-logo{
+    width: 50px;
+    height: 50px;
+    position: relative;
+    right: 64px;
+    margin: 10px;
+}
+.button{
+    font-weight: 500;
+  width: 120px;
+  height: 40px;
+  border-radius: 14.33px;
+background: #D81F84;
+cursor: pointer;
+text-align: center;
+position: relative;
+bottom: 7px;
+display: flex;
+align-items: center;
+justify-content: center;
+
+margin: 0px 30px;
+color: #FFF;
+font-family: 'Roboto', sans-serif;
+font-size: 20px;
+font-style: normal;
+
+line-height: normal;
+
+}
+.mobile-menu-icon {
+    display: none; 
+    margin: 18px 30px;
+    cursor: pointer;
+  }
+ 
+  
+  .mobile-dropdown {
+    display: none;
+    margin: 0px 20px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(0, 0, 0, 0.08);
+background: rgba(0, 0, 0, 0.02);
+  }
+  .email{
+    width: 138px;
+height: 36px;
+flex-shrink: 0;
+border-radius: 8px;
+background: #D81F84;
+color: #FFF;
+font-family: 'Roboto';
+font-size: 16px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+align-items: center;
+justify-content: center;
+display: flex;
+}
+
+.profile{
+   background-color:#E8E8E8;
+   
+   height: 50px;
+   width: 50px;
+   border-radius: 100%;
+   position: relative;
+   right: 13px;
+   bottom: 7px;
+
+}
+
+@media(max-width:800px){
+    .web{
+        display: none;
+    }
+}
+@media(max-width:500px){
+    .web-2{
+        display: none;
+    }
+    .container-1{
+        padding: 0px 30px;
+    }
+}
+
+@media (max-width: 768px) {
+    .mobile-menu-icon {
+      display: block; 
+    }
+  
+    .navigation {
+      display: none; 
+    }
+  
+    .mobile-dropdown {
+      display: block;
+    }
+    .Navbar{
+        border-radius: 0%;
+    }
+    .links:hover{
+        background-color: #f3afed;
+    }
+    .company-logo{
+        left: -0px;
+    }
+  }
+    
+    

@@ -1,0 +1,34 @@
+#request{
+    border-radius: 10px;
+border: 0.553px solid #E8E8E8;
+background: #FAFAFA;
+width: 100%;
+height: 280.151px;
+flex-shrink: 0;
+vertical-align: top;
+padding: 5px 5px;
+margin: 10px 0px;
+white-space: pre-wrap;
+color: #B3B3B3;
+font-family: 'Roboto';
+font-size: 15px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+letter-spacing: 0.265px;
+}
+
+.request-button{
+    border-radius: 9.946px;
+background: #D81F84;
+width: 194.503px;
+height: 45.863px;
+flex-shrink: 0;
+/* margin: 20px 215px !important; */
+}
+
+.request-back{
+    text-decoration: underline;
+    cursor: pointer;
+}
+

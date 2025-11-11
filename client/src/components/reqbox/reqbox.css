@@ -1,0 +1,60 @@
+.view-button{
+    width: 83px;
+    height: 38px;
+    flex-shrink: 0;
+    border-radius: 9.104px;
+background: #D81F84;
+display: flex;
+justify-content: center;
+align-items: center;
+color: #FFF;
+font-family: 'Roboto';
+font-size: 15.174px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+}
+
+.req-box{
+    width: 100%;
+min-height: 77px;
+flex-shrink: 0;
+border-radius: 13.656px;
+border: 0.759px solid #DBDBDB;
+background: #F8F8F8;
+display: flex;
+justify-content: space-between;
+padding: 20px 20px;
+margin: 20px 0px;
+}
+.message{
+    overflow-wrap: break-word;
+}
+.container1-req{
+    display: block;
+    margin-right: 10px;
+}
+.ticket-title{
+    color: #35363A;
+font-family: 'Roboto';
+font-size: 16.5px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+display: flex;
+}
+
+.ticket-detail{
+    color: #555;
+font-family: 'Roboto';
+font-size: 14px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+}
+
+@media (max-width:370px) {
+    .message{
+        max-width: 120px;
+    }
+}

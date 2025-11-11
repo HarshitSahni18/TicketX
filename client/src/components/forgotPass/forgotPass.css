@@ -1,0 +1,29 @@
+.form-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 50px 0px;
+}
+.form{
+    
+    width: 550px !important;
+}
+
+.input-box{
+    width: 100% !important;
+    margin: 5px 5px;
+    border-radius: 9.886px;
+    border: 1.648px solid #C8C8C8;
+    background: rgba(255, 255, 255, 0.00);
+    width: 401.204px;
+    height: 60.963px;
+    flex-shrink: 0;
+    color: #B8B8B8;
+font-family: 'Roboto';
+font-size: 14.829px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+letter-spacing: 0.222px;
+padding: 20px 20px;
+}

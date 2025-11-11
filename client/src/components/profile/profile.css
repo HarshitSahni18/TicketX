@@ -1,0 +1,159 @@
+.profile_page{
+   
+height: 391px;
+flex-shrink: 0;
+border-radius: 20px;
+border: 2px solid #EFEFEF;
+background: #FAFAFA;
+display: block;
+margin: 50px 50px;
+padding: 95px 50px;
+
+}
+.container-profile{
+    display: flex;
+    
+
+justify-content: space-between;
+}
+
+.profile-img{
+    width: 121px;
+    height: 121px;
+    flex-shrink: 0;
+    background-color: black;
+    border-radius: 100%;
+    margin: 0 50px;
+}
+
+.profile-details{
+    display: flex;
+   
+}
+
+.title{
+    color: #35363A;
+font-family: 'Roboto';
+font-size: 20px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+padding: 13px 0px;
+width: 80px;
+}
+.name{
+    display: flex;
+    margin-bottom: 30px;
+    
+}
+
+.name-box{
+    min-width: 300px;
+height: 51px;
+flex-shrink: 0;
+border-radius: 10px;
+border: 2px solid #EAEAEA;
+background: #FAFAFA;
+color: #35363A;
+font-family: 'Ubuntu';
+font-size: 20px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+display: flex;
+text-align: center;
+justify-content: center;
+align-items: center;
+padding: 10px;
+}
+
+.edit{
+    margin: 0px 0px;
+    margin-bottom: 10px;
+    width: 200px;
+}
+.buttons{
+    margin-right: 50px;
+}
+.req-popup{
+    color: #3F80CC;
+font-family: 'Roboto';
+font-size: 22px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+letter-spacing: 0.22px;
+text-decoration-line: underline;
+margin-left: 50px;
+cursor: pointer;
+}
+@media (max-width:1070px) {
+    .profile-img{
+        display: none;
+    }
+    .edit1{
+        margin-bottom: 80px;
+    }
+    .profile_page{
+        margin: 20px 10px;
+        padding: 90px 20px;
+    }
+    
+}
+@media (max-width:720px) {
+    .profile-cont{
+        width: 100%;
+    }
+    .buttons{
+        display: flex;
+    }
+    .container-profile{
+        display: block;
+    }
+    .profile_page{
+       margin: 18px 18px;
+       border-radius: 0px;
+       padding: 40px 50px;
+    } 
+    .edit1{
+        margin-bottom: 0px;
+    }
+    .edit{
+        width: 120px;
+        font-size: 13px;
+        height: 32px;
+    }
+    .buttons{
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+    }
+    .name{
+        width: 100%;
+        justify-content: space-between;
+    }
+}
+@media (max-width:500px) {
+    .title,.name-box{
+        font-size: 15px;
+        max-width: 65px;
+    }
+    .name-box{
+        min-width: 190px;
+        height: 40px;
+    }
+    .edit{
+        width: 90px;
+        font-size: 13px;
+        height: 32px;
+    }
+    .side{
+        font-size: 15px !important;
+        position: absolute;
+        bottom: 40px;
+        left: 140px;
+    }
+    .profile_page{
+        padding: 40px 10px;
+     }
+}

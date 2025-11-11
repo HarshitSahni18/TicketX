@@ -1,0 +1,80 @@
+form {
+    display: block;
+    margin: 20px 20px;
+    
+}
+.signup-form{
+    margin: 10px 20px;
+
+}
+#MobileNo,#passwordConfirm,#dropdown{
+    width: 100% !important;
+    margin: 5px 5px;
+    border-radius: 9.886px;
+    border: 1.648px solid #C8C8C8;
+    background: rgba(255, 255, 255, 0.00);
+    width: 401.204px;
+    height: 60.963px;
+    flex-shrink: 0;
+    color: #B8B8B8;
+font-family: 'Roboto';
+font-size: 14.829px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+letter-spacing: 0.222px;
+padding: 20px 20px;
+}
+
+.form-heading-signUp{
+    text-align: center;
+    padding: 15px 10px;
+    color: #35363A;
+font-family: 'Roboto';
+font-size: 34.601px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+}
+label {
+    margin: 0px 20px;
+    background-color: white;
+    position: relative;
+    top: 15px;
+    
+}
+.signUp{
+    padding: 0px 5px;
+}
+
+
+
+.new-account,.create-acc{
+    text-align: center;
+    margin: 0px 0px;
+}
+
+@media (max-width: 690px) {
+    .form-heading-signUp{
+        font-size: 20px;
+        padding: 8px 0px;
+    }
+    #MobileNo,#passwordConfirm,#dropdown{
+        height: 20px ;
+        margin: 3px 3px;
+        font-size: 13px;
+    }
+    #email,#password{
+        height: 20px !important;
+        margin: 3px 3px !important;
+        font-size: 13px;
+    }
+    .signup-form{
+        margin: 0px 10px;
+        margin-bottom: 5px;
+    }
+    #passwordConfirm{
+        margin-bottom: 20px;
+    }
+  }
+

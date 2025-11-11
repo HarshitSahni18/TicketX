@@ -1,0 +1,124 @@
+#hero{
+    display: flex;
+    margin: 50px 120px;
+    justify-content: space-around;
+    flex-wrap: wrap-reverse;
+    max-width: 1980px;
+    
+}
+.container1{
+    margin: 100px 0px;
+}
+
+.hero-heading{
+    color: #000;
+font-family: 'Inter';
+font-size: 72px;
+font-style: normal;
+font-weight: 800;
+line-height:70px;
+letter-spacing: 11.16px;
+margin: 20px 20px;
+max-width: 100%;
+    height: auto;
+}
+
+.hero-details{
+    color: #000;
+    font-family: 'Inter';
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    width: 418px;
+    margin: 20px 20px;
+    max-width: 100%;
+    height: auto;
+}
+
+.hero-button{
+    margin: 60px 20px;
+    border-radius: 12px;
+background: #D81F84;
+width: 256px;
+height: 60px;
+flex-shrink: 0;
+text-align: center;
+
+color: #FFF;
+font-family: 'Roboto';
+font-size: 22px;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+letter-spacing: 1.32px;
+cursor: pointer;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+
+.hero-image{
+    
+    max-width: 400px;
+    margin: 70px 0px;
+    
+
+}
+
+@media(max-width:480px){
+    .center_class{
+        display: flex;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        
+    }
+    #hero{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 20px 0px;
+    }
+    .hero-heading{
+        font-size: 30px;
+        margin: 10px 0px;
+        text-align: center;
+        line-height: 30px;
+    }
+    .hero-details{
+       font-size: 13px;
+       width: fit-content;
+    }
+        
+        
+       
+    .container1{
+        margin: 0px 0px;
+        width: 300px;
+        
+    }
+    .hero-image{
+        max-width: 250px;
+        margin: 0px 0px;
+    }
+    .hero-button{
+        margin: 10px 100px;
+       
+    width: 200px;
+    height: 50px;
+    
+    font-size: 16px;
+    
+    }
+    
+}
+@media(max-width:320px){
+    .hero-details{
+        display: block;
+        width: 250px;
+        font-size: 12px;
+    }
+   
+}
