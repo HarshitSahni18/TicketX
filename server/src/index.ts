@@ -35,8 +35,8 @@ app.get("/health-check", (req, res) => {
   res.status(200).json({ message: "Yeah, I'm Alive!!" });
 });
 
-// Serve React Frontend
-const clientBuildPath = path.join(__dirname, "../client/build");
+// Serve React Frontend from build folder
+const clientBuildPath = path.join(__dirname, "../client"); // 'client' folder contains the build
 app.use(express.static(clientBuildPath));
 
 app.get("*", (req, res) => {
